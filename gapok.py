@@ -194,6 +194,8 @@ elif tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Gol
 elif tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
   st.warning ("Gaji Pokoknya adalah 2.522.600")
   
+elif tipe_pegawaii == "Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)" and golongan_pegawaii == "Golongan I" and 0 <= masa_kerjaa <= 1:
+  st.warning ("Gaji Pokoknya adalah 1.938.500")
 
 
 
