@@ -9,7 +9,21 @@ tipe_pegawai = ["Pilih Tipe Pegawai", "Pegawai Negeri Sipil (PNS)", "Pegawai Pem
 golongan_pegawai = ["Pilih Golongan",
                  "Golongan Ia",
                  "Golongan Ib",
-                 "Golongan Ic"]
+                 "Golongan Ic",
+                 "Golongan Id",
+                 "Golongan IIa",
+                 "Golongan IIb",
+                 "Golongan IIc",
+                 "Golongan IId",
+                 "Golongan IIIa",
+                 "Golongan IIIb",
+                 "Golongan IIIc",
+                 "Golongan IIId",
+                 "Golongan IVa",
+                 "Golongan IVb",
+                 "Golongan IVc",
+                 "Golongan IVd",
+                 "Golongan IVe"]
 masa_kerja = ["Pilih Masa Kerja", 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33]
                  
 
