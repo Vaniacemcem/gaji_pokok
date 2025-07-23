@@ -8,14 +8,14 @@ st.write("Ini adalah aplikasi untuk mengecek Gaji Pokok Berdasarkan Masa Kerja d
 golongan_gendut = ["Pilih Golongan",
                  "Golongan Ia",
                  "Golongan Ib"]
-masa_kerja = ["Pilih Masa Kerja", 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32]
+masa_kerja = ["Pilih Masa Kerja", 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33]
                  
 
 golongan_pegawai = st.selectbox(''':blue[Masukan Golongan]''', golongan_gendut)
 masa_kerjaa = st.selectbox(''':blue[Masukan Masa Kerja (Dalam Tahun)]''',masa_kerja)
 
 if golongan_pegawai == "Golongan Ia" and 0 <= masa_kerjaa <= 1:
-  st.info ("Gaji Pokoknya adalah 1.685.700")
+  st.warning ("Gaji Pokoknya adalah 1.685.700")
 
 elif golongan_pegawai == "Golongan Ia" and 2 <= masa_kerjaa <= 3:
   st.write ("Gaji Pokoknya adalah 1.738.800")
@@ -53,5 +53,25 @@ elif golongan_pegawai == "Golongan Ia" and 22 <= masa_kerjaa <= 23:
 elif golongan_pegawai == "Golongan Ia" and 24 <= masa_kerjaa <= 25:
   st.write ("Gaji Pokoknya adalah 2.445.500")
 
+elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
+  st.write ("Gaji Pokoknya adalah 2.522.600")
+elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
+  st.write ("Gaji Pokoknya adalah 2.522.600")
+elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
+  st.write ("Gaji Pokoknya adalah 2.522.600")
+elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
+  st.write ("Gaji Pokoknya adalah 2.522.600")
+elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
+  st.write ("Gaji Pokoknya adalah 2.522.600")
+elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
+  st.write ("Gaji Pokoknya adalah 2.522.600")
+elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
+  st.write ("Gaji Pokoknya adalah 2.522.600")
+elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
+  st.write ("Gaji Pokoknya adalah 2.522.600")
+elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
+  st.write ("Gaji Pokoknya adalah 2.522.600")
+elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
+  st.write ("Gaji Pokoknya adalah 2.522.600")
 elif golongan_pegawai == "Golongan Ia" and 26 <= masa_kerjaa <= 27:
   st.write ("Gaji Pokoknya adalah 2.522.600")
