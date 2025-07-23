@@ -20,13 +20,13 @@ masa_kerjaa = st.selectbox(''':blue[Masukan Masa Kerja (Dalam Tahun)]''',masa_ke
 if tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 0 <= masa_kerjaa <= 1:
   st.warning ("Gaji Pokoknya adalah 1.685.700")
 
-elif tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" golongan_pegawaii == "Golongan Ia" and 2 <= masa_kerjaa <= 3:
+elif tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 2 <= masa_kerjaa <= 3:
   st.warning ("Gaji Pokoknya adalah 1.738.800")
 
-elif tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" golongan_pegawaii == "Golongan Ia" and 4 <= masa_kerjaa <= 5:
+elif tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 4 <= masa_kerjaa <= 5:
   st.warning ("Gaji Pokoknya adalah 1.793.500")
   
-elif tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" golongan_pegawaii == "Golongan Ia" and 6 <= masa_kerjaa <= 7:
+elif tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 6 <= masa_kerjaa <= 7:
   st.warning ("Gaji Pokoknya adalah 1.850.000")
 
 elif golongan_pegawaii == "Golongan Ia" and 8 <= masa_kerjaa <= 9:
