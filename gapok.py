@@ -3,7 +3,7 @@ import streamlit as st
 st.info("""
 # Aplikasi Cek Gaji Pokok
 """)
-st,warning("Ini adalah aplikasi untuk mengecek Gaji Pokok Berdasarkan Masa Kerja dan Golongan")
+st.warning("Ini adalah aplikasi untuk mengecek Gaji Pokok Berdasarkan Masa Kerja dan Golongan")
 
 tipe_pegawai = ["Pilih Tipe Pegawai", "Pegawai Negeri Sipil (PNS)", "Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)"]
 golongan_pegawai = ["Pilih Golongan",
@@ -17,7 +17,7 @@ golongan_pegawaii = st.selectbox(''':blue[Masukan Golongan]''', golongan_pegawai
 masa_kerjaa = st.selectbox(''':blue[Masukan Masa Kerja (Dalam Tahun)]''',masa_kerja)
 
 # Golongan Ia
-if golongan_pegawai == "Golongan Ia" and 0 <= masa_kerjaa <= 1:
+if golongan_pegawai == "Golongan Ia" and 0 <= masa_kerjaa <= 1 and tipe_pegawai == "Pegawai Negeri Sipil (PNS)":
   st.warning ("Gaji Pokoknya adalah 1.685.700")
 
 elif golongan_pegawai == "Golongan Ia" and 2 <= masa_kerjaa <= 3:
