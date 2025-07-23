@@ -17,7 +17,7 @@ golongan_pegawaii = st.selectbox(''':blue[Masukan Golongan]''', golongan_pegawai
 masa_kerjaa = st.selectbox(''':blue[Masukan Masa Kerja (Dalam Tahun)]''',masa_kerja)
 
 # Golongan Ia
-if golongan_pegawai == "Golongan Ia" and 0 <= masa_kerjaa <= 1 and tipe_pegawai == "Pegawai Negeri Sipil (PNS)":
+if tipe_pegawai == "Pegawai Negeri Sipil (PNS)" and golongan_pegawai == "Golongan Ia" and 0 <= masa_kerjaa <= 1:
   st.warning ("Gaji Pokoknya adalah 1.685.700")
 
 elif golongan_pegawai == "Golongan Ia" and 2 <= masa_kerjaa <= 3:
