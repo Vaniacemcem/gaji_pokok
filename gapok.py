@@ -13,7 +13,7 @@ masa_kerja = ["Pilih Masa Kerja", 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18
                  
 
 tipe_pegawaii = st.selectbox(''':blue[Masukan Tipe Pegawai]''', tipe_pegawai)
-golongan_pegawaii = st.selectbox(''':blue[Masukan Golongan]''', golongan_pegawaii)
+golongan_pegawaii = st.selectbox(''':blue[Masukan Golongan]''', golongan_pegawai)
 masa_kerjaa = st.selectbox(''':blue[Masukan Masa Kerja (Dalam Tahun)]''',masa_kerja)
 
 # Golongan Ia
