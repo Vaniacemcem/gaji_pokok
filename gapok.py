@@ -1,5 +1,10 @@
 import streamlit as st
 
+st.set_page_config(
+  page_title="Cek Gaji Pokok ASN",
+  page_icon="💸",
+)
+
 st.info("""
 # Aplikasi Cek Gaji Pokok ASN
 """)
