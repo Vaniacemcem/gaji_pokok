@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.info("""
-# Aplikasi Cek Gaji Pokok
+# Aplikasi Cek Gaji Pokok ASN
 """)
 st.warning("Ini adalah aplikasi untuk mengecek Gaji Pokok berdasarkan Masa Kerja dan Golongan")
 
