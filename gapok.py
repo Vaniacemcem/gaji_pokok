@@ -8,7 +8,7 @@ st.set_page_config(
 st.success("""
 # Tools Cek Gaji Pokok ASN
 """)
-st.warning("Ini adalah aplikasi untuk mengecek Gaji Pokok berdasarkan Masa Kerja dan Golongan")
+
 
 tipe_pegawai = ["Pilih Tipe Pegawai", "Pegawai Negeri Sipil (PNS)", "Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)"]
 golongan_pegawai = ["Pilih Golongan",
