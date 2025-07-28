@@ -11,11 +11,13 @@ st.success("""
 
 """)
 
+# Input: Tipe Pegawai
 tipe_pegawaii = st.selectbox(
     "Masukkan Tipe Pegawai",
     ("Pegawai Negeri Sipil (PNS)", "Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)")
 )
 
+# Input: Golongan berdasarkan tipe pegawai
 if tipe_pegawaii == "Pegawai Negeri Sipil (PNS)":
     golongan_pegawaii = st.selectbox(
         "Masukkan Golongan",
@@ -26,7 +28,6 @@ if tipe_pegawaii == "Pegawai Negeri Sipil (PNS)":
             "Golongan IVa", "Golongan IVb", "Golongan IVc", "Golongan IVd", "Golongan IVe"
         )
     )
-
 elif tipe_pegawaii == "Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)":
     golongan_pegawaii = st.selectbox(
         "Masukkan Golongan",
@@ -38,7 +39,10 @@ elif tipe_pegawaii == "Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)":
         )
     )
 
-  
+# Pilihan masa kerja tetap
+masa_kerja = ["Pilih Masa Kerja"] + list(range(0, 34))
+masa_kerjaa = st.selectbox("Masukkan Masa Kerja (Dalam Tahun)", masa_kerja)
+
 # Golongan Ia
 if tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 0 <= masa_kerjaa <= 1:
   st.warning ("Gaji Pokoknya adalah 1.685.700")
