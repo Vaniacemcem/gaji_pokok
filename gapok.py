@@ -11,44 +11,33 @@ st.success("""
 
 """)
 
-
-# --- PILIHAN TIPE PEGAWAI ---
-tipe_pegawai_list = ["Pilih Tipe Pegawai", "Pegawai Negeri Sipil (PNS)", "Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)"]
-tipe_pegawaii = st.selectbox("Masukkan Tipe Pegawai", tipe_pegawai_list)
-
-# --- PILIHAN GOLONGAN BERDASARKAN TIPE PEGAWAI ---
-golongan_pegawaii = None  # default supaya tidak error
+tipe_pegawaii = st.selectbox(
+    "Masukkan Tipe Pegawai",
+    ("Pegawai Negeri Sipil (PNS)", "Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)")
+)
 
 if tipe_pegawaii == "Pegawai Negeri Sipil (PNS)":
-    golongan_pns = [
-        "Pilih Golongan",
-        "Golongan Ia", "Golongan Ib", "Golongan Ic", "Golongan Id",
-        "Golongan IIa", "Golongan IIb", "Golongan IIc", "Golongan IId",
-        "Golongan IIIa", "Golongan IIIb", "Golongan IIIc", "Golongan IIId",
-        "Golongan IVa", "Golongan IVb", "Golongan IVc", "Golongan IVd", "Golongan IVe"
-    ]
-    golongan_pegawaii = st.selectbox("Masukkan Golongan (PNS)", golongan_pns)
+    golongan_pegawaii = st.selectbox(
+        "Masukkan Golongan",
+        (
+            "Golongan Ia", "Golongan Ib", "Golongan Ic", "Golongan Id",
+            "Golongan IIa", "Golongan IIb", "Golongan IIc", "Golongan IId",
+            "Golongan IIIa", "Golongan IIIb", "Golongan IIIc", "Golongan IIId",
+            "Golongan IVa", "Golongan IVb", "Golongan IVc", "Golongan IVd", "Golongan IVe"
+        )
+    )
 
 elif tipe_pegawaii == "Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)":
-    golongan_pppk = [
-        "Pilih Golongan",
-        "Golongan I", "Golongan II", "Golongan III", "Golongan IV",
-        "Golongan V", "Golongan VI", "Golongan VII", "Golongan VIII",
-        "Golongan IX", "Golongan X", "Golongan XI", "Golongan XII",
-        "Golongan XIII", "Golongan XIV", "Golongan XV", "Golongan XVI", "Golongan XVII"
-    ]
-    golongan_pegawaii = st.selectbox("Masukkan Golongan (PPPK)", golongan_pppk)
+    golongan_pegawaii = st.selectbox(
+        "Masukkan Golongan",
+        (
+            "Golongan I", "Golongan II", "Golongan III", "Golongan IV",
+            "Golongan V", "Golongan VI", "Golongan VII", "Golongan VIII",
+            "Golongan IX", "Golongan X", "Golongan XI", "Golongan XII",
+            "Golongan XIII", "Golongan XIV", "Golongan XV", "Golongan XVI", "Golongan XVII"
+        )
+    )
 
-# --- MASA KERJA ---
-masa_kerja = ["Pilih Masa Kerja"] + list(range(0, 34))
-masa_kerjaa = st.selectbox("Masukkan Masa Kerja (Dalam Tahun)", masa_kerja)
-
-# --- CEK DAN TAMPILKAN GAJI (PASTIKAN SEMUA SUDAH DIPILIH) ---
-if (
-    tipe_pegawaii != "Pilih Tipe Pegawai" and 
-    golongan_pegawaii != "Pilih Golongan" and 
-    masa_kerjaa != "Pilih Masa Kerja"
-):
   
 # Golongan Ia
 if tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 0 <= masa_kerjaa <= 1:
