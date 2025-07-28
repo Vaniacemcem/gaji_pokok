@@ -8,7 +8,7 @@ st.set_page_config(
 st.success("""
 # Tools Cek Gaji Pokok ASN
 
-aaa
+
 """)
 
 
