@@ -44,7 +44,7 @@ masa_kerja = ["Pilih Masa Kerja"] + list(range(0, 34))
 masa_kerjaa = st.selectbox("Masukkan Masa Kerja (Dalam Tahun)", masa_kerja)
 
 # Golongan Ia
-if tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 0 <= masa_kerjaa <= 1:
+  if tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 0 <= masa_kerjaa <= 1:
   st.warning ("Gaji Pokoknya adalah 1.685.700")
 
 elif tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 2 <= masa_kerjaa <= 3:
