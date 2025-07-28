@@ -49,8 +49,7 @@ if (
     golongan_pegawaii != "Pilih Golongan" and 
     masa_kerjaa != "Pilih Masa Kerja"
 ):
-
-
+  
 # Golongan Ia
 if tipe_pegawaii == "Pegawai Negeri Sipil (PNS)" and golongan_pegawaii == "Golongan Ia" and 0 <= masa_kerjaa <= 1:
   st.warning ("Gaji Pokoknya adalah 1.685.700")
